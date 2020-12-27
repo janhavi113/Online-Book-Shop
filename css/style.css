@@ -1,53 +1,124 @@
-body{
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 16px;
+	color: #C28274;
+	font-family: sans-serif;
+	font-weight: 300;
+	
+}
 
-background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url("2.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+#login-box
+{
+	position: relative;
+	margin: 5% auto;
+	height: 800px;
+	width: 600px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
+
+.left-box
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 300px;
+	height: 800px;
+}
+h1{
+	margin: 0 0 20px 0;
+	font-weight: 300;
+	font-size: 28px;
+	
+}
+
  
-.container{
-width: 500px;
-height: 450px;
-text-align: center;
-margin: 0 auto;
-background-color: rgba(44, 62, 80,0.7);
-margin-top: 160px;
-}
+input[type="submit"]
+ {
+	 margin-bottom: 28px;
+	 width: 120px;
+	 height: 32px;
+	 background: #f44336;
+	 border: none;
+	 border-radius: 2px;
+	 color: #fff;
+	 font-family: sans-serif;
+	 font-weight: 500;
+	 text-transform: uppercase;
+	 transition: 0.2s ease;
+	 cursor: pointer;
+ }
  
-.container img{
-width: 150px;
-height: 150px;
-margin-top: -60px;
-}
-/
-input[type="text"],input[type="password"]{
-margin-top: 30px;
-height: 45px;
-width: 300px;
-font-size: 18px;
-margin-bottom: 20px;
-background-color: #fff;
-padding-left: 40px;
-}
+input[type="submit"]:hover,
+input[type="submit"]:focus
+ {
+	 background: #ff5722;
+	 transition: 0.2s ease;
+	 
+ }
  
-.form-input::before{
-content: "\f007";
-font-family: "FontAwesome";
-padding-left: 07px;
-padding-top: 40px;
-position: absolute;
-font-size: 35px;
-color: #2980b9;
-}
  
-.form-input:nth-child(2)::before{
-content: "\f023";
-}
  
-.btn-login{
-padding: 15px 25px;
-border: none;
-background-color: #27ae60;
-color: #fff;
-}
+input[type="text"],
+input[type="password"]
+ {
+	 display: block;
+	 box-sizing: border-box;
+	 margin-bottom: 20px;
+	 padding: 4px;
+	 width: 220px;
+	 height: 32px;
+	 bolder: none;
+	 outline: none;
+	 border-bottom: 1px solid #aaa;
+	 font-family: sans-serif;
+	 font-weight: 400;
+     font-size: 15px;
+	 transition: 0.2s ease;
+ }
+ 
+ .right-box
+ {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 box-sizing: border-box;
+	 padding: 40px;
+	 width: 300px;
+	 height: 800px;
+	 background-image: url(2.jpg);
+	 background-position: center;
+	 background-size: cover;
+ }
+ 
+ .or
+ {
+	 position: absolute;
+	 top: 180px;
+	 left: 280px;
+	 width: 40px;
+	 height: 40px;
+	 background: #efefef;
+	 border-radius: 50%;
+	 box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+	 line-height: 40px;
+	 text-align: center;
+ }
+ button.social
+{
+	  margin-bottom: 20px;
+	  width: 220px;
+	  height: 36px;
+	  border: none;
+	  border-radius: 2px;
+	  color: #fff;
+	  font-family: sans-serif;
+	  font-weight: 500;
+      transition: 0.2s ease;
+	  cursor: pointer;
+ }
